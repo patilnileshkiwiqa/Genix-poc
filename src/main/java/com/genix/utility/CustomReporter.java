@@ -611,7 +611,7 @@ public class CustomReporter extends CustomReporterListener {
 	 */
 	protected void endHtml(PrintWriter out) {
 		out.println(
-				"<tr bgcolor='SkyBlue'><td align='right' colspan='6'><center><b><i>Report customized by SA </i><b><center></center></b></b></center></td></tr>");
+				"<tr bgcolor='SkyBlue'><td align='right' colspan='6'><center><b><i>Report customized by KiwiQA </i><b><center></center></b></b></center></td></tr>");
 		out.println("</table>");
 		out.println("</body></html>");
 	}
