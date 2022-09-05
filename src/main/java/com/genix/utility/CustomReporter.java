@@ -363,9 +363,9 @@ public class CustomReporter extends CustomReporterListener {
 
 		m_out.println("<tr><td bgcolor='white' colspan='6'> <table border='0' width='100%' bgcolor='#e6f7ff'><tr>"
 				+ "<td  width='25%'  bgcolor='white'>"
-				+ "<center><img width='150px' src='https://www.mtn.sd/mtn/wp-content/themes/mtn-theme/images/mtn-logo-nav.svg'/></center>"
+				+ "<center><img width='150px' src='https://www.kiwiqa.com/wp-content/uploads/2021/08/kiwiqa-logo.png'/></center>"
 				+ "</td><td ><center><font color='#008bcc'><b><h1>Test Cases Analysis</h1></b></font></center></td> "
-				+ "<td width='25%' bgcolor='white'>" + "<center><img width='290px' src='https://www.solutionanalysts.com/wp-content/uploads/2021/02/SA-Logo-high.png'/></center></td> "
+				+ "<td width='25%' bgcolor='white'>" + "<center><img width='290px' src='https://www.saucedemo.com/static/media/logo3x.096bf4a7.svg'/></center></td> "
 				+ "</tr></table> </td></tr>");
 		m_out.println("<tr><td colspan='6'>Overall test suite completion: <b>" + Time
 				+ " minutes</b><br/> Date and Time of Run: <b>" + sdf.format(date) + "</b><br/> Browser: <b>"
@@ -380,6 +380,7 @@ public class CustomReporter extends CustomReporterListener {
 	private void resultDetail(IResultMap tests) {
 		for (ITestResult result : tests.getAllResults()) {
 			ITestNGMethod method = result.getMethod();
+			
 			m_methodIndex++;
 			String cname = method.getTestClass().getName();
 			m_out.println("<h2 id=\"m" + m_methodIndex + "\">" + cname + ":" + method.getMethodName() + "</h2>");

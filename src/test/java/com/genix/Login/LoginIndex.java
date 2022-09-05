@@ -23,7 +23,6 @@ public class LoginIndex extends SeleniumInit{
 
 		int numOfFailure=0;
 		
-		Assert.fail();
 		log("Open URL : "+testUrl);	
 		
 		//Parameters
@@ -126,7 +125,6 @@ public class LoginIndex extends SeleniumInit{
 	@Test
 	public void logout() throws IOException, AWTException{
 		
-		Assert.fail();
 		int numOfFailure=0;
 		
 		log("Logging out.");

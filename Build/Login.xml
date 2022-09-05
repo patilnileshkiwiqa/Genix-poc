@@ -24,7 +24,7 @@
 		</classes>
 	</test>
 	
-<!-- 	<test name="TC_02 Select Add Product">
+	<test name="TC_02 Select Add Product">
 		<classes>
 			<class name="com.genix.Login.LoginIndex">
 				<methods>
@@ -35,7 +35,7 @@
 		</classes>
 	</test>
 	
-	
+<!-- 	
 	<test name="TC_03 Product cart count check">
 		<classes>
 			<class name="com.genix.Login.LoginIndex">
