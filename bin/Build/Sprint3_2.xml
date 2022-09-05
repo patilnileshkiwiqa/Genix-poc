@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MTN - Sprint 3.2" verbose="10">
+
+	<listeners>
+		<listener class-name="com.stl.utility.CustomDetailReporter" />
+		<listener class-name="com.stl.utility.CustomReporterBuildSummary" />
+		<listener class-name="com.stl.utility.CustomReporter" />
+		<listener class-name="com.stl.reports.ExtentReportListener" />
+	</listeners>
+
+	<test name="Sprint3.2_TC01 :: Limit subscription purchase under a single Customer Account, view invoice - payment history, and billing information for multiple BAs.">
+		<classes>
+			<class name="com.mtn.ete.ETE_UserJourneyTest">
+				<methods>
+					<include name="subscriptionLimit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Sprint3.2_TC02 :: Restrict a postpaid user to purchase plans if the spending limit is reached.">
+		<classes>
+			<class name="com.mtn.ete.ETE_UserJourneyTest">
+				<methods>
+					<include name="spendingLimit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

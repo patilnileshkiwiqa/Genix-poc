@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo" verbose="10">
+
+	<listeners>
+		<listener class-name="com.genix.utility.CustomDetailReporter" />
+		<listener class-name="com.genix.utility.CustomReporterBuildSummary" />
+		<listener class-name="com.genix.utility.CustomReporter" />
+		<listener class-name="com.genix.reports.ExtentReportListener" />
+	</listeners>
+
+	<parameter name="ExecutionByXML" value="true" />
+	<parameter name="Browser" value="chrome" /> 
+	<parameter name="URL" value="https://www.saucedemo.com/inventory.html" />
+
+	<test name="TC_01 Login">
+		<classes>
+			<class name="com.genix.Login.LoginIndex">
+				<methods>
+					<include name="login">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+<!-- 	<test name="TC_02 Select Add Product">
+		<classes>
+			<class name="com.genix.Login.LoginIndex">
+				<methods>
+					<include name="selectProduct">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="TC_03 Product cart count check">
+		<classes>
+			<class name="com.genix.Login.LoginIndex">
+				<methods>
+					<include name="removeProductFromCart">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="TC_04 Product Price Verification">
+		<classes>
+			<class name="com.genix.Login.LoginIndex">
+				<methods>
+					<include name="productPriceVerification">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+	<test name="TC_05 logout">
+		<classes>
+			<class name="com.genix.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

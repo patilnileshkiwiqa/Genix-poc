@@ -1,0 +1,14 @@
+# JDT-specific
+.classpath
+**/package-info.java
+
+# Eclipse Core      
+.project
+.settings/
+target/
+test-output
+/bin/
+images
+src/test/java/com/demo
+extReport.html
+Resource/Profile
